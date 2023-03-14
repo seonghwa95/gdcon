@@ -1,0 +1,133 @@
+.mo-none { display: block; }
+.mo-block { display: none; }
+
+/* 寃��됱갹 */
+#search-box { text-align: right; margin-top: 50px; margin-bottom: 50px; }
+#search-box * { font-family: 'APPLE_SANDG', sans-serif; font-weight: 400; }
+#search-box .wrap { position: relative; display: inline-block; max-width: 600px; width: 100%; }
+#search-box input[type="text"] { width: 100%; height: 50px; padding-left: 20px; padding-right: 50px; font-size: 16px; display: inline-block; border-radius: 50px; border: 1px solid #e8e8e8; outline: none; }
+#search-box input[type="text"]::placeholder { color: #aaa; }
+#search-box button { position: absolute; top: 50%; right: 20px; transform: translateY(-50%); border-style: none; background: transparent; }
+
+/* 寃뚯떆�� 由ъ뒪�� */
+#noticeList table { margin-bottom: 60px; }
+#noticeList thead th { font-size: 16px; font-weight: 500; color: #666; padding: 15px 3px; white-space: nowrap; text-align: center; }
+#noticeList thead tr { border-bottom: 2px solid #28417c; }
+#noticeList tbody tr { border-bottom: 1px solid #e8e8e8; transition: all 0.2s; }
+#noticeList tbody tr:hover { background-color: #fbfbfb; }
+#noticeList tbody td { font-size: 16px; text-align: center; white-space: nowrap; }
+#noticeList tbody td.left { text-align: left; padding: 25px 40px; }
+#noticeList tbody td.left a { display: block; width: 43.8542vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2; }
+#noticeList tbody td a i { font-weight: 700; }
+
+/* 酉고럹�댁� */
+#board_viewBox .view_title { padding: 25px 0 20px; border-top: 2px solid #aaa; border-bottom: 1px solid #ddd; padding-left: 20px; }
+#board_viewBox .view_title .title { font-size: 24px; padding-bottom: 20px; font-weight: 700; line-height: 1.2; }
+#board_viewBox .view_title span { font-size: 16px; color: #777; }
+#board_viewBox .view_title .writer { padding-right: 20px; }
+#board_viewBox .view_title .date { padding-right: 20px; }
+#board_viewBox .view_contents { background-color: #f9f9f9; padding: 20px; margin: 50px 0; }
+#board_viewBox .view_contents p { font-size: 16px; line-height: 1.6; }
+#board_viewBox .list { border-top: 2px solid #eee; border-bottom: 2px solid #eee; margin-bottom: 60px; }
+#board_viewBox .list dl { padding: 15px 20px; display: flex; align-items: center; }
+#board_viewBox .list dl:not(:last-child) { border-bottom: 1px solid #eee; }
+#board_viewBox .list dl dt { width: 100px; font-size: 16px; font-weight: 700; }
+#board_viewBox .list dl dd { width: calc(100% - 100px); }
+#board_viewBox .list dl dd a { display: inline-block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 100%; line-height: 1.2; }
+#board_viewBox .list dl dd a:hover { text-decoration-line: underline; }
+#board_viewBox .toList_box { text-align: center; }
+#board_viewBox .toList_box a { display: inline-block; border: 1px solid transparent; padding: 20px 50px; font-weight: 500; color: #fff; font-size: 24px; border-radius: 5px; background-color: #28417c; transition: all 0.1s; }
+#board_viewBox .toList_box a:hover { background-color: #fff; color: #28417c; border-color: #28417c; }
+
+.file-down-btn {
+    padding: 5px;
+    background: #28417c;
+    color: white;
+    border-radius: 5px;}
+
+.file-down-btn > a{
+    color: white;}
+
+/* �섏씠吏��ㅼ씠�� */
+#pagination { display: flex; align-items: center; justify-content: center; }
+#pagination > div:first-child { margin-right: 35px; }
+#pagination > div:first-child a:first-child { margin-right: 30px; }
+#pagination > div:last-child { margin-left: 35px; }
+#pagination > div:last-child  a:first-child { margin-right: 30px; }
+#pagination .num { display: flex; }
+#pagination .num > div { margin: 0 1px; }
+#pagination .num > div .page-link { display: inline-block; width: 40px; line-height: 40px; text-align: center; font-size: 16px; border-radius: 50%; color: #999; }
+#pagination .num > div:hover .page-link { background-color: #ff8942; color: #fff; }
+#pagination .num > div.on .page-link { background-color: #ff8942; color: #fff; }
+
+
+@media screen and (max-width: 768px) {
+    .mo-none { display: block; }
+    .mo-block { display: none; }
+
+    /* 寃��됱갹 */
+    #search-box { margin-bottom: 60px; }
+    #search-box .wrap { max-width: 100%; }
+    #search-box input[type="text"] { width: 100%; height: 60px; font-size: 2.6042vw; }
+
+    /* 寃뚯떆�� 由ъ뒪�� */
+    #noticeList colgroup { display: none; }
+    #noticeList thead th { display: none; }
+    #noticeList tbody td { font-size: 2.8646vw; }
+    #noticeList tbody td:first-child,
+    #noticeList tbody td:nth-child(3),
+    #noticeList tbody td:nth-child(4) { display: none; }
+    #noticeList tbody td.left { padding: 45px 20px 30px; }
+    #noticeList tbody td.left a { width: 80vw; padding-bottom: 40px; }
+    #noticeList tbody td.left p { width: auto; font-size: 2.6042vw; color: #666; }
+
+    /* 酉고럹�댁� */
+    #board_viewBox .view_title span { font-size: 2.0833vw; }
+    #board_viewBox .view_title .title { font-size: 3.1250vw; }
+    #board_viewBox .view_contents p { font-size: 2.0833vw; }
+    #board_viewBox .list dl dt { font-size: 1.8229vw; }
+    #board_viewBox .list dl dd a { font-size: 1.8229vw; }
+    #board_viewBox .toList_box a { font-size: 3.1250vw; }
+
+    /* �섏씠吏��ㅼ씠�� */
+    #pagination .num > div .page-link { width: 7.1615vw; line-height: 7.1615vw; font-size: 2.8646vw; }
+}
+
+
+@media screen and (max-width: 500px) {
+    /* 寃��됱갹 */
+    #search-box { margin-bottom: 30px; }
+    #search-box input[type="text"] { height: 40px; font-size: 14px; }
+
+    /* 寃뚯떆�� 由ъ뒪�� */
+    #noticeList table { margin-bottom: 30px; }
+    #noticeList tbody td { font-size: 14px; }
+    #noticeList tbody td.left { padding: 20px 10px 15px; }
+    #noticeList tbody td.left a { padding-bottom: 20px; }
+    #noticeList tbody td.left p { font-size: 12px; }
+
+    /* 酉고럹�댁� */
+    #write-box .write-top .w-input input { font-size: 14px; padding: 0 15px; line-height: 40px; }
+    #board_viewBox .view_title { padding: 20px 0 10px; padding-left: 10px; }
+    #board_viewBox .view_title span { font-size: 12px; line-height: 1.4; }
+    #board_viewBox .view_title .title { font-size: 18px; padding-bottom: 10px; }
+    #board_viewBox .view_contents { padding: 10px; margin: 25px 0; }
+    #board_viewBox .view_contents p { font-size: 14px; }
+    #board_viewBox .list { margin-bottom: 30px; }
+    #board_viewBox .list dl { padding: 10px; }
+    #board_viewBox .list dl dt { font-size: 13px; width: 60px; }
+    #board_viewBox .list dl dd { width: calc(100% - 60px); }
+    #board_viewBox .list dl dd a { font-size: 13px; }
+    #board_viewBox .toList_box a { font-size: 18px; padding: 15px 30px; }
+
+
+    .file-down-btn {
+        padding: 1.5px;}
+
+    /* �섏씠吏��ㅼ씠�� */
+    #pagination > div:first-child { margin-right: 20px; }
+    #pagination > div:first-child a:first-child { margin-right: 15px; }
+    #pagination > div:last-child { margin-left: 20px; }
+    #pagination > div:last-child a:first-child { margin-right: 15px; }
+    #pagination .num > div .page-link { width: 30px; line-height: 30px; font-size: 14px; }
+}
