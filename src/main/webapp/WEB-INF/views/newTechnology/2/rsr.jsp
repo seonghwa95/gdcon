@@ -1,8 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="csrf-token" content="zklx80nrrSBG7UtppehjGPuU98HryQAgRDaMmjiU">
+    <meta name="csrf-token" content="dOr5Y8ce5RUze0YIwc8qTXkTS5Kuzy14jmxbfBSa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GD컨설턴트</title>
@@ -17,7 +18,6 @@
     <!-- 사이트에 대한 설명 -->
     <meta name="description" content="">
 
-    <!-- css -->
     <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/common.css">
@@ -25,18 +25,21 @@
     <link rel="stylesheet" href="/css/inc.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
 
-    <!-- JavaScript -->
     <script src="/js/aos.js"></script>
     <script src="/js/jquery-min.js"></script>
     <script src="/js/swiper.min.js"></script>
     <script src="/js/jqueryUi.js"></script>
     <script src="/js/common.js"></script>
+
+    <link rel="stylesheet" href="/css/cont.css">
+    <script src="/js/cont.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
     <script src="/js/main.js"></script>
     <script src="/js/fullpage.js"></script>
 </head>
-<body style="background: linear-gradient(#000, #28417c);">
+<body>
+
 <div id="container">
     <header id="header">
         <div class="header_box c_header">
@@ -62,7 +65,7 @@
                                     <a href="/newTechnology/1/rfBeam" class="dep2_a">보강 엄지말뚝</a>
                                 </li>
                                 <li class="dep2_li">
-                                    <a href="javascript:;" class="dep2_a">자립식 흙막이<img src="images/icon/h_arrow.png" alt=""></a>
+                                    <a href="javascript:;" class="dep2_a">자립식 흙막이<img src="/images/icon/h_arrow.png" alt=""></a>
                                     <ul class="dep3">
                                         <li class="dep3_li">
                                             <a href="/newTechnology/2/rsr" class="dep3_a">RSR 공법</a>
@@ -167,7 +170,7 @@
                                                 <a href="/newTechnology/1/rfBeam" class="sm_dep2_a">보강 엄지말뚝</a>
                                             </li>
                                             <li class="sm_dep2_li">
-                                                <a href="javascript:;" class="sm_dep2_a">자립식 흙막이<img src="images/icon/h_arrow.png" alt=""></a>
+                                                <a href="javascript:;" class="sm_dep2_a">자립식 흙막이<img src="/images/icon/h_arrow.png" alt=""></a>
                                                 <ul class="sm_dep3">
                                                     <li class="sm_dep3_li">
                                                         <a href="/newTechnology/2/rsr" class="sm_dep3_a">RSR 공법</a>
@@ -259,172 +262,257 @@
 
     </script>
 
-    <div id="main">
-        <div id="visual">
-            <div class="swiper mySwiper visual_swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide visual_slide" style="background-image:url(/storage/main_slide/2022/06/27/YJ98i6ybfvZMRKSYTJaEAl3yIBoOpT4jopJygBKk.jpg);">
-                        <div class="txt_box fs28">
-                            <p>GD컨설턴트 홈페이지에 오신걸 환영합니다</p>
+    <div id="Sub">
+        <div class="visual newTechnology">
+        </div>
+        <nav id="SubNavi">
+            <ul class="parent flex inner" data-liststyle="none">
+                <li class="home-data p-d">
+                    <a class="parent-link" href="/" title="홈 이동">
+                        <img src="/images/icon/home_icon.png" alt="">
+                    </a>
+                </li>
+                <li class="parent-data p-d fs16">
+                    <a href="/newTechnology/1/rfBeam" class="parent-link p-link" title="신기술 신공법 이동">신기술 신공법</a>
+                </li>
+                <li class="child-data p-d">
+                    <a href="/newTechnology/2/rsr" class="parent-link p-link fs16" title="자립식 흙막이 이동">자립식 흙막이</a>
+                </li>
+                <li class="child-data p-d">
+                    <a href="/newTechnology/2/rsr" class="parent-link p-link fs16">RSR</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="Cont">
+        <div id="tech">
+            <div class="inner">
+                <h2 class="cont_title fs28">자립식 흙막이</h2>
+                <ul class="tech_tab flex">
+                    <li>
+                        <a href="/newTechnology/2/rsr" class="tab_btn active fs22">RSR 공법</a>
+                    </li>
+                    <li>
+                        <a href="/newTechnology/2/cscr" class="tab_btn fs22">CSCR 공법</a>
+                    </li>
+                    <li>
+                        <a href="/newTechnology/2/var" class="tab_btn fs22">VAR 공법</a>
+                    </li>
+                </ul>
+                <p class="tech_txt fs24">RSR 공법 (Re-bar type Self-supported Retaining wall)</p>
+                <div class="tech_box">
+                    <div class="tech_wrap">
+                        <p class="wrap_title fs22 flex">공법 특징</p>
+                        <div class="wrap">
+                            <ul class="text_list2">
+                                <li class="fs18">상부 트러스 구조 형성으로 흙막이 변위 최소화 및 벽체 안정성 증대</li>
+                                <li class="fs18">전열말뚝과 후열말뚝을 강봉으로 직접 연결하여 흙막이 가시설의 안정성 증대</li>
+                                <li class="fs18">상부 연약한 토사층 치환 다짐으로 후열말뚝 수동저항 증대, 벽체 변위 최소화</li>
+                                <li class="fs18">지층조건, 굴착심도에 따라 최적화된 자립식 흙막이 공법 적용 가능</li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="tech_wrap">
+                        <p class="wrap_title fs22 flex">공법의 원리</p>
+                        <div class="img-box">
+                            <img src="/images/cont/tech_2_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="tech_wrap">
+                        <p class="wrap_title fs22 flex">RSR 공법 개요도</p>
+                        <div class="img-box">
+                            <img src="/images/cont/tech_2_2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="tech_wrap">
+                        <p class="wrap_title fs22 flex">전·후열말뚝 연결재 종류</p>
+                        <div class="wrap">
+                            <table class="table table2">
+                                <colgroup>
+                                    <col width="50%">
+                                    <col width="50%">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th class="fs16">연결강봉</th>
+                                    <th class="fs16">연결앵글 (쌍ㄱ형강)</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="/images/cont/tech_2_3.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="/images/cont/tech_2_4.jpg" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="fs16">연결빔</th>
+                                    <th class="fs16">사재</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="/images/cont/tech_2_5.jpg" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="/images/cont/tech_2_6.jpg" alt="">
+                                    </td>
+                                </tr>
+                                </tbody>
+
+                            </table>
+                            <div class="flex img_box2">
+                                <ul class="img_list3 flex img_1">
+                                    <li>
+                                        <img src="/images/cont/tech_2_7.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="/images/cont/tech_2_8.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="/images/cont/tech_2_9.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="/images/cont/tech_2_10.jpg" alt="">
+                                    </li>
+                                </ul>
+                                <div>
+                                    <img src="/images/cont/tech_2_11.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech_wrap">
+                        <p class="wrap_title fs22 flex">전·후열말뚝 연결구조</p>
+                        <div class="wrap">
+                            <table class="table table2 img_table">
+                                <tbody>
+                                <tr>
+                                    <th class="fs16">연결강봉 + 연결앵글</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="/images/cont/tech_2_12.jpg" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="fs16">연결강봉 + 연결앵글 + 사재</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="/images/cont/tech_2_14.jpg" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="fs16">연결강봉 + 연결빔</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="/images/cont/tech_2_16.jpg" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="fs16">연결강봉 + 연결빔 + 사재</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="/images/cont/tech_2_18.jpg" alt="">
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tech_wrap tech_table_wrap">
+                        <p class="wrap_title fs22 flex">시공사진</p>
+                        <div class="wrap">
+                            <ul class="img_list_2 flex">
+                                <li>
+                                    <div class="img_box">
+                                        <img src="/images/cont/tech_2_20.jpg" alt="">
+                                    </div>
+                                    <p class="fs16">ㆍ 화성동탄2신도시 테크노밸리 25BL 지식산업센터</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="/images/cont/tech_2_21.jpg" alt="">
+                                    </div>
+                                    <p class="fs16">ㆍ 화성동탄2 A99BL / 100BL 신축공사</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="/images/cont/tech_2_22.jpg" alt="">
+                                    </div>
+                                    <p class="fs16">ㆍ 상아2차 아파트 주택재건축정비사업 신축공사</p>
+                                </li>
+                                <li>
+                                    <div class="img_box">
+                                        <img src="/images/cont/tech_2_23.jpg" alt="">
+                                    </div>
+                                    <p class="fs16">ㆍ 화성 동탄2지구 C-1BL 주상복합 신축공사</p>
+                                </li>
+                            </ul>
+
+
+                            <div class="img_sub_box">
+                                <ul class="img_list_2 flex">
+                                    <li class="m_bt0">
+                                        <div class="flex">
+                                            <div class="box img_box">
+                                                <img src="/images/cont/tech_2_26.jpg" alt="">
+                                            </div>
+                                            <div class="box img_box">
+                                                <img src="/images/cont/tech_2_24.jpg" alt="">
+                                                <img src="/images/cont/tech_2_25.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="fs16 img_title">ㆍ 한남동 680-1번지 일대 공동주택 신축공사</p>
+                                    </li>
+                                    <li class="m_bt0">
+                                        <div class="flex">
+                                            <div class="box img_box">
+                                                <img src="/images/cont/tech_2_29.jpg" alt="">
+                                            </div>
+                                            <div class="box img_box">
+                                                <img src="/images/cont/tech_2_27.jpg" alt="">
+                                                <img src="/images/cont/tech_2_28.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="fs16 img_title">ㆍ 울산 송정지구 C1BL 공동주택 건설공사</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="img_sub_box">
+                                <ul class="img_list_2 flex">
+                                    <li class="m_bt0">
+                                        <div class="img_box">
+                                            <img src="/images/cont/tech_2_30.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="m_bt0">
+                                        <div class="img_box">
+                                            <img src="/images/cont/tech_2_31.jpg" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="img_title fs16">ㆍ 신길9 재정비촉진구역 주택재개발사업( R.S.R영구옹벽 )</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <section id="section1">
-            <div class="main_inner">
-                <ul class="p_list flex">
-                    <li>
-                        <p class="title fs18"><span>보강 엄지말뚝</span></p>
-                        <div class="img_box">
-                            <img src="images/main/p_list01.jpg" alt="">
-                        </div>
-                        <div class="btn_box btn_box1 flex">
-                            <a href="/newTechnology/1/rfBeam" class="btn fs15">RF-BEAM 공법</a>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="title fs18"><span>자립식 흙막이</span></p>
-                        <div class="img_box">
-                            <img src="images/main/p_list02.jpg" alt="">
-                        </div>
-                        <div class="btn_box btn_box2 flex">
-                            <a href="/newTechnology/2/rsr" class="btn fs15">RSR 공법</a>
-                            <a href="/newTechnology/2/cscr" class="btn fs15">CSCR 공법</a>
-                            <a href="/newTechnology/2/var" class="btn fs15">VAR 공법</a>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="title fs18"><span>무띠장 영구앵커 옹벽</span></p>
-                        <div class="img_box">
-                            <img src="images/main/p_list03.jpg" alt="">
-                        </div>
-                        <div class="btn_box btn_box1 flex">
-                            <a href="newTechnology/3/nwa" class="btn fs15">NWA 공법</a>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="title fs18"><span>수평 레이커 시스템</span></p>
-                        <div class="img_box">
-                            <img src="images/main/p_list04.jpg" alt="">
-                        </div>
-                        <div class="btn_box btn_box3 flex">
-                            <a href="" class="btn fs15">HRS 공법</a>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="title fs18"><span>수직증축 하중분배 공법</span></p>
-                        <div class="img_box">
-                            <img src="images/main/p_list05.jpg" alt="">
-                        </div>
-                        <div class="btn_box btn_box1 flex">
-                            <a href="" class="btn fs15">LSM 공법</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
     </div>
+    <a href="javascript:void(0)" id="topScroll">
+
+        <span class="fs13">맨 위로</span>
+    </a>
     <script>
-        $(function(){
-            var mySwiper = new Swiper('.visual_swiper', {
-                effect : 'fade',
-                direction: 'horizontal',
-                loop: true,
-                autoplay : {
-                    delay:5000,
-                },
-                speed : 2000,
-                slidesPerView: 1,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev"
-                },
-            });
-        });
-    </script>
-    <style>
-        .pop_layer {
-            position: fixed;
-            z-index: 9099;
-            font-size: 14px;
-        }
-
-        .pop_layer img {
-            vertical-align: bottom;
-        }
-
-        .pop_layer .close_box {
-            padding: 5px;
-            background-color: #ddd;
-            color: #333;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .pop_layer .close_box label {
-            display: inline-block;
-        }
-
-        .pop_layer .close_box a {}
-
-        @media  screen and (max-width: 768px) {
-            .pop_layer {
-                position: fixed;
-                z-index: 10;
-                font-size: 14px;
-                top: 50% !important;
-                left: 50% !important;
-                transform: translate(-50%, -50%);
-                max-width: 320px;
-                max-height: 600px;
-                width: 100%;
-            }
-
-            .pop_layer img {
-                width: 100% !important;
-                height: auto !important;
-            }
-        }
-
-    </style>
-    <script type="text/javascript">
-        function close_pop(id) {
-            $('#' + id).hide();
-            if ($('input[name=close_24_' + id + ']').is(':checked')) {
-                setCookie(id, "done", 1);
-            }
-        }
-
-        function setCookie(name, value, expiredays) {
-            var todayDate = new Date();
-            todayDate.setDate(todayDate.getDate() + expiredays);
-            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
-        }
-
-        function getCookie(name) {
-            var nameOfCookie = name + "=";
-            var x = 0;
-            while (x <= document.cookie.length) {
-                var y = (x + nameOfCookie.length);
-                if (document.cookie.substring(x, y) == nameOfCookie) {
-                    if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
-                        endOfCookie = document.cookie.length;
-                    return unescape(document.cookie.substring(y, endOfCookie));
-                }
-                x = document.cookie.indexOf(" ", x) + 1;
-                if (x == 0)
-                    break;
-            }
-            return "";
-        }
-
-        $('.pop_layer').each(function(idx, el) {
-            var p_name = $(this).attr('id');
-            if (getCookie(p_name) == 'done') {
-                $(this).hide();
-            }
+        $("#topScroll").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
         });
     </script>
 
@@ -432,7 +520,7 @@
     <footer id="footer">
         <div class="main_inner flex">
             <a href="/" class="f_logo">
-                <img src="images/common/f_logo.png" alt="">
+                <img src="/images/common/f_logo.png" alt="">
             </a>
             <address>
                 <p class="adr_txt">주소 : 서울특별시 송파구 법원로 9길 26 H비지니스파크 C동 1004, 1005호 (문정동645-2)</p>
@@ -441,6 +529,7 @@
             </address>
             <div class="btn_box">
                 <a href="">온라인문의</a>
+                <a href="">FAMILY SITE <img src="/images/icon/f_arrow.png" alt=""></a>
             </div>
         </div>
     </footer>
