@@ -1,42 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="csrf-token" content="zklx80nrrSBG7UtppehjGPuU98HryQAgRDaMmjiU">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GD컨설턴트</title>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="GD컨설턴트">
-    <meta property="og:description" content="">
-    <link rel="canonical" href="">
-    <!-- 사이트 저작자 표시 -->
-    <meta name="author" content="GD컨설턴트">
-    <!-- 검색 엔진을 위한 키워드 -->
-    <meta name="keywords" content="GD컨설턴트">
-    <!-- 사이트에 대한 설명 -->
-    <meta name="description" content="">
 
-    <!-- css -->
-    <link rel="stylesheet" href="/css/font.css">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/swiper.min.css">
-    <link rel="stylesheet" href="/css/inc.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+<%@ include file="common/head.jsp"%>
 
-    <!-- JavaScript -->
-    <script src="/js/aos.js"></script>
-    <script src="/js/jquery-min.js"></script>
-    <script src="/js/swiper.min.js"></script>
-    <script src="/js/jqueryUi.js"></script>
-    <script src="/js/common.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/fullpage.js"></script>
-</head>
 <body style="background: linear-gradient(#000, #28417c);">
 <div id="container">
     <header id="header">

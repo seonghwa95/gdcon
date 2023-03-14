@@ -2,41 +2,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="csrf-token" content="dOr5Y8ce5RUze0YIwc8qTXkTS5Kuzy14jmxbfBSa">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GD컨설턴트</title>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="GD컨설턴트">
-    <meta property="og:description" content="">
-    <link rel="canonical" href="">
-    <!-- 사이트 저작자 표시 -->
-    <meta name="author" content="GD컨설턴트">
-    <!-- 검색 엔진을 위한 키워드 -->
-    <meta name="keywords" content="GD컨설턴트">
-    <!-- 사이트에 대한 설명 -->
-    <meta name="description" content="">
-
-    <link rel="stylesheet" href="/css/font.css">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/swiper.min.css">
-    <link rel="stylesheet" href="/css/inc.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-
-    <script src="/js/aos.js"></script>
-    <script src="/js/jquery-min.js"></script>
-    <script src="/js/swiper.min.js"></script>
-    <script src="/js/jqueryUi.js"></script>
-    <script src="/js/common.js"></script>
+    <%@ include file="../common/head.jsp"%>
 
     <link rel="stylesheet" href="/css/cont.css">
+
     <script src="/js/cont.js"></script>
-    <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/main.js"></script>
-    <script src="/js/fullpage.js"></script>
 </head>
 <body>
 
@@ -45,7 +15,7 @@
         <div class="header_box c_header">
             <div class="main_inner flex">
                 <h1 class="h_logoBox">
-                    <a href="http://www.gdcon.co.kr">
+                    <a href="/">
                         <img src="/images/common/h_logo.png" alt="">
                     </a>
                 </h1>
@@ -263,7 +233,7 @@
     </script>
 
     <div id="Sub">
-        <div class="visual intro">
+        <div class="visual intro" style="background: linear-gradient(#000, #28417c);">
         </div>
         <nav id="SubNavi">
             <ul class="parent flex inner" data-liststyle="none">
@@ -293,10 +263,12 @@
                             </div>
                             <div class="sub_txtBox">
                                 <p class="stxt fs20">“특화된 기술, 끊임없는 변화와 혁신, 책임있는 경영으로<br/> 더 나은 가치를 실현하겠습니다”</p>
-                                <p class="stxt fs18">㈜지디컨설턴트 홈페이지를 방문해 주신 여러분, 반갑습니다.</p>
-                                <p class="stxt fs18">당사는 지반분야 설계 및 컨설팅, 신기술·신공법 개발을 전문으로 하며, 현재까지 특화된 기술을 바탕으로 수 많은 프로젝트를 성공적으로 수행하였으며, 전문성을 가진 기업으로 꾸준히 성장해 왔습니다.</p>
-                                <p class="stxt fs18">차별화된 경쟁력을 가진 신뢰받는 기업으로 도약하고자 최선의 노력을 기울이고 있으며, 이를 위해 전문적인 서비스를 제공하고, 가치있는 기술을 지속적으로 연구·개발하여 유용하게 사용될 수 있도록 노력하고 있습니다.</p>
-                                <p class="stxt fs18">여러분의 변함없는 관심과 격려 그리고 힘찬 성원을 부탁드립니다. <br/>감사합니다.</p>
+                                <div class="bggray">
+                                    <p class="stxt fs18">㈜지디컨설턴트 홈페이지를 방문해 주신 여러분, 반갑습니다.</p>
+                                    <p class="stxt fs18">당사는 지반분야 설계 및 컨설팅, 신기술·신공법 개발을 전문으로 하며, 현재까지 특화된 기술을 바탕으로 수 많은 프로젝트를 성공적으로 수행하였으며, 전문성을 가진 기업으로 꾸준히 성장해 왔습니다.</p>
+                                    <p class="stxt fs18">차별화된 경쟁력을 가진 신뢰받는 기업으로 도약하고자 최선의 노력을 기울이고 있으며, 이를 위해 전문적인 서비스를 제공하고, 가치있는 기술을 지속적으로 연구·개발하여 유용하게 사용될 수 있도록 노력하고 있습니다.</p>
+                                    <p class="stxt fs18">여러분의 변함없는 관심과 격려 그리고 힘찬 성원을 부탁드립니다. <br/>감사합니다.</p>
+                                </div>
                                 <br/>
                                 <br/>
                                 <br/>
@@ -313,23 +285,7 @@
         </section>
     </div>
 
-
-    <footer id="footer">
-        <div class="main_inner flex">
-            <a href="/" class="f_logo">
-                <img src="/images/common/f_logo.png" alt="">
-            </a>
-            <address>
-                <p class="adr_txt">주소 : 서울특별시 송파구 법원로 9길 26 H비지니스파크 C동 1004, 1005호 (문정동645-2)</p>
-                <p class="adr_txt">Tel : 02-456-1613 (대표전화)&nbsp;&nbsp;|&nbsp;&nbsp;Fax : 02-6281-8496 &nbsp;&nbsp;|&nbsp;&nbsp;Mail : gd@gdcon.co.kr</p>
-                <p class="copyright"> COPYRIGHT© 2022 GD CONSULTANT CO., LTD. ALL RIGHTS RESERVED</p>
-            </address>
-            <div class="btn_box">
-                <a href="">온라인문의</a>
-                <a href="">FAMILY SITE <img src="/images/icon/f_arrow.png" alt=""></a>
-            </div>
-        </div>
-    </footer>
+    <%@ include file="../common/footer.jsp" %>
 </div>
 </body>
 </html>
